@@ -65,7 +65,7 @@ class CitadelOrchestra < Formula
     SH
 
     # co-stop
-    (bin/"co-stop").write <<~SH
+    (bin/"co-stop").write <<~'SH'
       #!/bin/bash
       docker stop $(docker ps -q) 2>/dev/null
       echo "All containers stopped"
